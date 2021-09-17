@@ -13,7 +13,7 @@ class Category(OrderedModel):
 class MenuItem(OrderedModel):
     title = models.CharField(max_length=100)
     description = models.CharField(max_length=400)
-    price = models.IntegerField()
+    price = models.IntegerField(blank=True, null=True)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     active = models.BooleanField(default=True)
     

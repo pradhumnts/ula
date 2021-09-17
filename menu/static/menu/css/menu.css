@@ -60,7 +60,8 @@ header{
   line-height: 1.5;
 }
 .hr-theme{
-  border: 1px solid var(--primary-color);
+  border: .1px solid var(--primary-color);
+  background-color: var(--primary-color);
 }
 .menu-item{
   width: 100%;
