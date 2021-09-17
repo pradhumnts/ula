@@ -5,16 +5,93 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ula</title>
+    <title>Ula - Norte En Uno</title>
+    <link rel="stylesheet" href="{% static 'menu/bootstrap-5.0.2-dist/css/bootstrap.css' %}">
     <link rel="stylesheet" href="{% static 'menu/css/menu.css' %}">
+    <link rel="icon" type="image/png" href="{% static 'menu/images/icon.jpg' %}" sizes="32x32">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
 </head>
 <body>
     <header>
         <div class="navigation">
+            <a href="{% url 'index' %}">
             <div class="logo">
                 <img src="{% static 'menu/images/logo.jpeg' %}" alt="" class="logo-img">
-            </div>
+            </div></a>
+            <hr class="hard-hr">
         </div>
     </header>
+    <div class="secondary-nav">
+        <img src="{% static 'menu/images/nav-background.png' %}" alt="">
+        <div class="background-gradient"></div>
+        <h2 class="norte">Norte en uno</h2>
+    </div>
+    <div class="container p-5 mb-5">
+        <div class="row">
+            <div class="col-lg-5 p-4 primary-box d-flex flex-column align-items-center rounded">
+                <h1 class="">En ula</h1>
+                <img src="{% static 'menu/images/icon.jpg' %}" alt="" class="img-fluid w-75">
+                <a class="w-100" href="{% url 'menu' %}"><button class="primary-button btn mt-3 button">Menu A La Carta</button></a>
+            </div>
+            <div class="col-lg-2"></div>
+            <div class="col-lg-5 p-4 pink-box d-flex flex-column align-items-center rounded">
+                <h1 class="">DELIVERY</h1>
+                <img src="{% static 'menu/images/cycle.jpg' %}" alt="" class="img-fluid w-75">
+                <a class="w-100" href="https://ordering.orders2.me/menu/ula"><button class="primary-button btn mt-3 btn-pink button">Ordena En Linea</button></a>
+            </div>
+        </div>
+    </div>
+    <footer class="footer-index">
+        <div class="container">
+            <div class="row">
+            <div class="col-lg-8 px-5">
+                <div class="row d-flex align-items-center py-3">
+                    <div class="col-lg-4">
+                        <img src="{% static 'menu/images/footer_logo.jpg' %}" alt="" class="img-fluid w-75">
+                    </div>
+                    <div class="col-lg-8 footer-text-big">
+                        <p>GALERÍA DE SABORES LOCALES</p>
+                    </div>
+                </div>
+                <hr class="hr-theme ">
+                <div class="row d-flex align-items-center py-3">
+                    <div class="col-lg-6">
+                        <a href="https://www.google.com/maps/place/ULA+%7C+Norte+en+Uno/@19.7504929,-70.4098428,17.78z/data=!4m5!3m4!1s0x8eae1d292636088d:0x951f8af2813d29e8!8m2!3d19.7501556!4d-70.4075063?hl=en-DO"><div class="location py-2">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>CALLE CABARETE #40 CABARETE, <br> NORTH COAST.</p>
+                        </div></a>
+                    </div>
+                    <div class="col-lg-6 footer-text-big">
+                        <div class="contact">
+                            <a href="tel:+18297411252"><div class="location py-2">
+                                <i class="fas fa-phone-alt"></i>
+                                <p>+1 829-741-1252</p>
+                            </div>
+                        </a>
+                            <a href="https://www.instagram.com/ulacabarete/"><div class="location py-2">
+                                <i class="fab fa-instagram"></i>
+                                <p>Instagram</p>
+                            </div></a>
+                        </div>
+                    </div>
+                </div>
+                <p class="mt-5">Todos los derechos reservados.</p>
+            </div>
+            <div class="col-lg-4 px-4 text-center">
+                <div class="outer-div">
+                    <div class="inner-div p-5">
+                        <p>HORARIO</p>
+                        <h2 class="font-nord">Lun - DOM</h2>
+                        <h5>12 P.M. a 12 A.M.</h5>
+                        <hr class="hr-theme w-100">
+                        <p>Aceptamos tarjetas de crédito</p>
+                        <hr class="hr-theme w-100">
+                        <p>Impuestos incluidos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </footer>
 </body>
 </html>

@@ -6,8 +6,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ula: Menu</title>
-    <link rel="icon" type="image/png" href="{% static 'menu/images/logo.jpeg' %}" sizes="32x32">
+    <title>Ula - Menu</title>
+    <link rel="icon" type="image/png" href="{% static 'menu/images/icon.jpg' %}" sizes="32x32">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
     <link rel="stylesheet" href="{% static 'menu/css/menu.css' %}">
@@ -16,9 +16,11 @@
 <body>
     <header>
         <div class="navigation">
-            <div class="logo">
+            <a href="{% url 'index' %}">
+           <div class="logo">
                 <img src="{% static 'menu/images/logo.jpeg' %}" alt="" class="logo-img">
             </div>
+        </a>
         </div>
     </header>
 

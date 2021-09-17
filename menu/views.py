@@ -15,13 +15,3 @@ def menu(request):
     }
     return render(request, 'menu/menu.html', context=context)
 
-def add_item(request):
-    if request.method == "POST":
-        title = request.POST.get('title')
-        description = request.POST.get('description')
-        price = request.POST.get('price')
-        category = request.POST.get('category')
-        print(category)
-        MenuItem.objects.create(title=title, description=description, price=price, category=category)
-
-    return render(request, 'menu/add_item.html')
